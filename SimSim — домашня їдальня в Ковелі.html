@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SimSim — домашня їдальня в Ковелі</title>
+<meta name="description" content="SimSim — їдальня в Ковелі на вул. Драгоманова: домашні обіди, кава, їжа в закладі та із собою. Графік роботи, меню та телефон +380 98 459 81 87.">
+<meta property="og:title" content="SimSim — домашня їдальня в Ковелі"><meta property="og:description" content="Домашній смак. Затишна перерва. Обіди, кава, їжа в закладі та із собою."><meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23737B4B'/%3E%3Ccircle cx='16' cy='17' r='8' fill='none' stroke='%23FFFDF8' stroke-width='2.5'/%3E%3Cpath d='M16 4v6' stroke='%23FFFDF8' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F7F3EB;--card:#FFFDF8;--ink:#4A3529;--tx:#343434;--ink2:#6a5f56;--ol:#737B4B;--tc:#C77B57;--sec:#E9E0D3;--line:#e2d8c7;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#241b16;--card:#2f241d;--ink:#f1e6d6;--tx:#e8e0d4;--ink2:#bfb3a4;--ol:#9aa46a;--tc:#d98e6a;--sec:#33281f;--line:#46382c}}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(88px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 16px/1.65 Inter,system-ui,sans-serif;-webkit-text-size-adjust:100%}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:40}
+a{color:inherit}:focus-visible{outline:3px solid var(--ol);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:Manrope,sans-serif;color:var(--ink);margin:0}
+h1{font-size:clamp(36px,5.6vw,62px);line-height:1.06;letter-spacing:-.03em;font-weight:800}
+h2{font-size:clamp(27px,3.8vw,38px);line-height:1.15;letter-spacing:-.02em;font-weight:800;margin-bottom:12px}
+h3{font-size:19px;font-weight:700;line-height:1.3}
+.w{max-width:1160px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:18px;height:72px}
+.logo{display:flex;align-items:center;gap:10px;font:800 23px Manrope,sans-serif;color:var(--ink);letter-spacing:-.02em;text-decoration:none;margin-right:auto}
+nav{display:flex;gap:4px}nav a{text-decoration:none;font-weight:500;padding:10px 14px;border-radius:99px;transition:background .2s}
+nav a:hover,nav a[aria-current]{background:var(--sec)}
+.burger{display:none;width:48px;height:48px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:14px;font-size:20px;cursor:pointer}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 26px;border-radius:99px;border:2px solid var(--ol);background:var(--ol);color:#fff;font:600 16px Inter,sans-serif;text-decoration:none;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px -12px var(--ink)}.btn.o{background:transparent;color:var(--ink);border-color:var(--ink)}.btn.o:hover{background:var(--sec)}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.eyebrow{display:block;font:600 13px Inter;letter-spacing:.12em;color:var(--tc);margin-bottom:16px}
+.lead{font-size:18px;color:var(--ink2);max-width:52ch;margin:18px 0 28px}
+.hero{padding:56px 0 72px}.hero .w{display:grid;grid-template-columns:1fr 1.05fr;gap:48px;align-items:center}
+section{padding:72px 0}.alt{background:var(--sec)}
+.sub{color:var(--ink2);max-width:58ch;margin:0 0 32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:24px;overflow:hidden;text-decoration:none;height:100%;transition:transform .2s,box-shadow .2s}
+a.card:hover{transform:translateY(-3px);box-shadow:0 16px 30px -20px var(--ink)}
+.card .b{padding:18px 20px 22px;display:flex;flex-direction:column;gap:6px;flex:1}.card p{margin:0;color:var(--ink2);font-size:15px}
+.ph{position:relative;display:grid;place-items:center;align-content:center;gap:8px;background:linear-gradient(135deg,var(--sec),var(--line));color:var(--ink2);text-align:center;aspect-ratio:4/3;font-size:13px;font-weight:500;padding:12px;width:100%}
+.ph svg{width:44px;height:44px;opacity:.7}img.ph{object-fit:cover;padding:0}
+.ph.big{aspect-ratio:5/4;border-radius:32px;min-height:260px}.ph.big svg{width:96px;height:96px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.pill{display:flex;gap:12px;align-items:flex-start;padding:10px 0}.pill i{flex:none;width:10px;height:10px;border-radius:50%;background:var(--tc);margin-top:9px}
+.tbl{width:100%;max-width:520px;border-collapse:collapse}.tbl td{padding:13px 0;border-bottom:1px solid var(--line)}.tbl td+td{text-align:right;font-weight:600;color:var(--ink)}.tbl tr.today td{color:var(--ol);font-weight:700}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 0 14px;scrollbar-width:thin}
+.chips a{flex:none;padding:10px 18px;border-radius:99px;border:1.5px solid var(--line);background:var(--card);text-decoration:none;font-weight:500;white-space:nowrap}
+.chips a[aria-current]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.note{border:1.5px dashed var(--tc);border-radius:16px;padding:14px 18px;font-size:15px;color:var(--ink);background:var(--card);margin:0 0 28px}
+.demo{align-self:flex-start;font-size:12px;font-weight:600;color:var(--tc);margin-top:6px}.price{font-weight:600;color:var(--ink);font-size:14px;margin-top:auto;padding-top:8px}
+.fg{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:24px}.fg svg{width:30px;height:30px;color:var(--ol);margin-bottom:8px}.fg ul{margin:10px 0 0;padding-left:18px;color:var(--ink2)}
+.cta{background:var(--ink);color:var(--bg);border-radius:32px;padding:56px 40px}.cta h2{color:var(--bg)}.cta p{max-width:54ch;opacity:.9}.cta .btn{background:var(--bg);color:var(--ink);border-color:var(--bg)}.cta .btn.o{background:transparent;color:var(--bg)}
+.page{padding:56px 0 24px}.page .lead{margin-bottom:28px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:30px}
+dt{font-size:14px;color:var(--ink2);margin-top:18px}dd{margin:0;font:700 20px Manrope,sans-serif;color:var(--ink)}dd a{text-decoration:none}
+footer{background:var(--sec);padding:40px 0 104px;font-size:14px;color:var(--ink2)}footer .w{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px 40px}footer a{margin-right:14px}
+.call{display:none}
+@media(max-width:860px){.hero{padding:32px 0 48px}.hero .w,.cols{grid-template-columns:1fr;gap:28px}section{padding:52px 0}.cta{padding:36px 24px;border-radius:26px}.page{padding-top:36px}.box{padding:22px}.ph.big{min-height:0}
+.burger{display:block}.bar>.btn{display:none}
+nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--bg);border-bottom:1px solid var(--line);flex-direction:column;padding:10px 22px 18px}nav.open{display:flex}nav a{padding:14px;font-size:17px}
+.call{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:14px;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:30}.call .btn{box-shadow:0 8px 22px -10px #0007}.call .btn+.btn{background:var(--card);color:var(--ink);border-color:var(--ink)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style></head><body>
+<header><div class="w bar"><a class="logo" href="#home" aria-label="SimSim — на головну"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="var(--ol)"/><circle cx="16" cy="18" r="8" fill="none" stroke="#fff" stroke-width="2.5"/><path d="M16 4v6" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/></svg>SimSim</a>
+<nav id="nav" aria-label="Основна навігація"></nav><a class="btn" href="#menu">Переглянути меню</a>
+<button class="burger" id="bg" aria-expanded="false" aria-controls="nav" aria-label="Меню">☰</button></div></header>
+<main id="app" tabindex="-1"></main>
+<footer><div class="w"><div><b style="color:var(--ink)">SimSim</b> — їдальня, м. Ковель<br>Демонстраційна версія: фото та меню — приклади, їх буде замінено.</div><div><span id="fa"></span><br><a id="fp"></a><br><a href="#privacy">Політика конфіденційності</a></div></div></footer>
+<div class="call"><a class="btn" id="cp">Зателефонувати</a><a class="btn" href="#menu">Меню</a></div>
+<script>
+const C={name:'SimSim',addr:'вул. Драгоманова, Ковель',tel:'+380984598187',telT:'+380 98 459 81 87',
+hours:[['Понеділок','09:00–18:00'],['Вівторок','09:00–18:00'],['Середа','09:00–18:00'],['Четвер','09:00–18:00'],['П’ятниця','09:00–18:00'],['Субота','10:00–16:00'],['Неділя','зачинено']]};
+/* Замінити демонстраційні фото: вставте URL у відповідний ключ */
+const IMG={hero:'',cat:'',lunch:'',coffee:'',dine:'',take:'',g1:'',g2:'',g3:'',g4:''};
+const CATS=[['breakfast','Сніданки','Смачний початок дня'],['lunch','Обіди','Повноцінна перерва посеред справ'],['dinner','Вечері','Страви для спокійного завершення дня'],['coffee','Кава та напої','Кава для ранку та перерв'],['salads','Салати й салат-бар','Легкі варіанти для щоденного меню'],['veg','Вегетаріанські страви','Для тих, хто обирає без м’яса'],['snacks','Закуски','Щось невелике до основної страви'],['desserts','Десерти','Невелике солодке доповнення'],['alcohol','Алкогольні напої','Відповідно до фактичного меню']];
+const HOME=['breakfast','lunch','dinner','salads','coffee','desserts'];
+const MENU=[['breakfast','Страва для сніданку','Короткий опис страви.'],['breakfast','Страва для сніданку','Короткий опис страви.'],['lunch','Перша страва','Короткий опис страви.'],['lunch','Друга страва','Короткий опис страви.'],['dinner','Страва для вечері','Короткий опис страви.'],['dinner','Страва для вечері','Короткий опис страви.'],['coffee','Кава','Короткий опис напою.'],['coffee','Напій','Короткий опис напою.'],['salads','Салат','Короткий опис страви.'],['salads','Салат','Короткий опис страви.'],['veg','Вегетаріанська страва','Додайте ознаку лише після підтвердження.'],['veg','Вегетаріанська страва','Додайте ознаку лише після підтвердження.'],['snacks','Закуска','Короткий опис страви.'],['snacks','Закуска','Короткий опис страви.'],['desserts','Десерт','Короткий опис страви.'],['desserts','Десерт','Короткий опис страви.'],['alcohol','Напій','Короткий опис напою.'],['alcohol','Напій','Короткий опис напою.']].map(x=>({cat:x[0],name:x[1],desc:x[2],price:null}));
+const FEAT=[['Формат','chair',['Можна поїсти в закладі','Їжа із собою','Самообслуговування, без офіціантів','Можна прийти самому']],['Їжа та напої','cup',['Кава','Салат-бар','Вегетаріанські страви','Закуски та десерти','Бар і напої — відповідно до фактичного меню']],['Зручності','door',['Підходить для дітей','Доступний вхід для крісел колісних','Безкоштовна парковка','Wi-Fi','Туалет унісекс','Затишна та тиха атмосфера']],['Оплата','card',['Дебетові та кредитні картки','Мобільні платежі через NFC']]];
+const IC={cup:'<path d="M5 8h12v6a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5zM17 10h2a2 2 0 0 1 0 4h-2M8 3v2M12 3v2"/>',chair:'<path d="M7 4v9h10V4M5 13h14M7 13v7M17 13v7"/>',door:'<path d="M6 21V4h12v17M3 21h18M14 12v1"/>',card:'<rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18"/>',plate:'<circle cx="12" cy="13" r="7"/><circle cx="12" cy="13" r="3.5"/><path d="M12 3v3"/>'};
+const ic=n=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${IC[n]}</svg>`;
+const ph=(k,label,cls='',icn='plate')=>IMG[k]?`<img class="ph ${cls}" src="${IMG[k]}" alt="${label}" loading="lazy">`:`<div class="ph ${cls}" role="img" aria-label="${label}">${ic(icn)}<span>Демонстраційне зображення: ${label}<br>Замінити на фото SimSim</span></div>`;
+const phone=(t='Зателефонувати',c='')=>`<a class="btn ${c}" href="tel:${C.tel}">${t}</a>`;
+const day=['Неділя','Понеділок','Вівторок','Середа','Четвер','П’ятниця','Субота'][new Date(new Date().toLocaleString('en-US',{timeZone:'Europe/Kyiv'})).getDay()];
+const hours=()=>`<table class="tbl"><caption class="sr" style="position:absolute;left:-9999px">Графік роботи</caption><tbody>${C.hours.map(h=>`<tr${h[0]===day?' class="today"':''}><td>${h[0]}${h[0]===day?' (сьогодні)':''}</td><td>${h[1]}</td></tr>`).join('')}</tbody></table>`;
+const mcard=m=>`<article class="card">${ph('cat',m.name,'','plate')}<div class="b"><h3>${m.name}</h3><p>${m.desc}</p><span class="demo">Демонстраційна позиція — замінити перед запуском</span><span class="price">${m.price||'Ціну уточнюйте в закладі'}</span></div></article>`;
+const V={
+home:()=>`<div class="hero"><div class="w"><div><span class="eyebrow">ДОМАШНІ ОБІДИ • КАВА • ЗАТИШОК</span><h1>Домашній смак. Затишна перерва.</h1><p class="lead">Заходь на сніданок, смачний обід або каву. Обирай улюблені страви, смакуй у затишній атмосфері чи бери із собою.</p><div class="row"><a class="btn" href="#menu">Переглянути меню</a>${phone('Зателефонувати','o')}</div></div>${ph('hero','домашній обід','big')}</div></div>
+<section class="alt"><div class="w"><h2>Що сьогодні на обід?</h2><p class="sub">Категорії меню. Наявність конкретних страв уточнюйте в закладі.</p><div class="grid">${HOME.map(id=>{const c=CATS.find(x=>x[0]===id);return `<a class="card" href="#menu-${id}">${ph('cat',c[1])}<div class="b"><h3>${c[1]}</h3><p>${c[2]}</p></div></a>`}).join('')}</div></div></section>
+<section><div class="w cols">${ph('lunch','домашній обід','big')}<div><h2>Обід, на який варто знайти час</h2><p class="sub">Коли хочеться зробити паузу, сісти за стіл і спокійно поїсти, SimSim — місце для повсякденного обіду без зайвих формальностей.</p>${['Доступне цінове позиціонування','Можна поїсти в закладі','Можна взяти їжу із собою','Самообслуговування','Затишна атмосфера'].map(t=>`<div class="pill"><i></i><span>${t}</span></div>`).join('')}<p style="margin-top:20px"><a class="btn" href="#menu">Переглянути меню</a></p></div></div></section>
+<section class="alt"><div class="w cols"><div><h2>Кава — маленька пауза у великому дні</h2><p class="sub">Завітай на каву перед роботою, під час перерви або просто тоді, коли хочеться трохи перепочити.</p><div class="row"><a class="btn" href="#menu-coffee">До меню</a>${phone('Зателефонувати','o')}</div></div>${ph('coffee','чашка кави','big','cup')}</div></section>
+<section><div class="w"><h2>Як тобі зручніше?</h2><p class="sub">Їжа в закладі або із собою. Онлайн-замовлення немає — за потреби телефонуйте.</p><div class="grid"><div class="card">${ph('dine','обідній зал')}<div class="b"><h3>Поїсти в закладі</h3><p>Зроби перерву, знайди затишне місце та спокійно насолоджуйся їжею.</p></div></div><div class="card">${ph('take','їжа із собою','','cup')}<div class="b"><h3>Взяти із собою</h3><p>Обирай зручний формат, коли потрібно продовжувати свої справи.</p></div></div></div></div></section>
+<section class="alt"><div class="w"><h2>Просто, затишно та по-домашньому</h2><p class="sub">Особливості закладу.</p><div class="grid">${FEAT.map(f=>`<div class="fg">${ic(f[1])}<h3>${f[0]}</h3><ul>${f[2].map(t=>`<li>${t}</li>`).join('')}</ul></div>`).join('')}</div></div></section>
+<section><div class="w"><h2>Місце для своєї перерви</h2><p class="sub">Наодинці за чашкою кави, під час обіду або разом із родиною — обирай свій ритм і насолоджуйся моментом.</p><div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">${[['g1','обідній стіл'],['g2','кава','cup'],['g3','домашні страви'],['g4','затишний інтер’єр','chair']].map(g=>`<div class="card">${ph(g[0],g[1],'',g[2]||'plate')}</div>`).join('')}</div></div></section>
+<section class="alt"><div class="w"><h2>Коли завітати?</h2><p class="sub">Графік роботи.</p>${hours()}</div></section>
+<section><div class="w"><div class="cta"><h2>Завітай до SimSim</h2><p>Плануєш обід або хочеш випити кави? Переглянь меню та знайди зручний час для візиту.</p><p><b>${C.addr}</b><br><a href="tel:${C.tel}">${C.telT}</a> · <a href="#contacts">Графік роботи</a></p><div class="row">${phone()}<a class="btn o" href="#contacts">Контакти</a></div></div></div></section>`,
+menu:(cat)=>{const list=cat?CATS.filter(c=>c[0]===cat):CATS;return `<div class="w page"><h1>Меню</h1><p class="lead">Оберіть категорію. Замовлення онлайн немає — приходьте або телефонуйте.</p><div class="note"><b>Демонстраційне меню.</b> Страви, фото й ціни — приклади для презентації, не реальне меню SimSim. Їх потрібно замінити перед запуском.</div><div class="chips" role="navigation" aria-label="Категорії меню"><a href="#menu"${cat?'':' aria-current="page"'}>Усі</a>${CATS.map(c=>`<a href="#menu-${c[0]}"${c[0]===cat?' aria-current="page"':''}>${c[1]}</a>`).join('')}</div>${list.map(c=>`<section style="padding:32px 0 0" id="${c[0]}"><h2 style="font-size:28px">${c[1]}</h2><div class="grid">${MENU.filter(m=>m.cat===c[0]).map(mcard).join('')}</div></section>`).join('')}</div>`},
+about:()=>`<div class="w page"><h1 style="max-width:20ch">SimSim — затишна їдальня для щоденних обідів</h1><p class="lead">Домашній формат харчування з доступними цінами: обіди, кава та перерва посеред справ.</p><div class="cols">${ph('dine','обідній зал','big')}<div>${['Домашній формат харчування','Доступне цінове позиціонування','Обіди та кава','Їжа в закладі та із собою','Самообслуговування без офіціантів','Затишна атмосфера','Вегетаріанські страви для тих, хто їх обирає'].map(t=>`<div class="pill"><i></i><span>${t}</span></div>`).join('')}</div></div><p style="margin-top:32px"><a class="btn" href="#menu">Переглянути меню</a></p></div>`,
+contacts:()=>`<div class="w page"><h1>Контакти</h1><div class="cols" style="margin-top:28px;align-items:start"><div class="box"><dl style="margin:0"><dt>Заклад</dt><dd>SimSim — їдальня</dd><dt>Адреса</dt><dd>${C.addr}</dd><dt>Телефон</dt><dd><a href="tel:${C.tel}">${C.telT}</a></dd></dl><p class="sub" style="margin:18px 0 22px">Самообслуговування, їжа в закладі та із собою. Онлайн-замовлення немає.</p>${phone()}<p class="sub" style="font-size:14px;margin:16px 0 0">Карту та маршрут додамо після уточнення точної адреси.</p></div><div class="box"><h2 style="font-size:26px">Графік роботи</h2>${hours()}</div></div></div>`,
+privacy:()=>`<div class="w page"><h1>Політика конфіденційності</h1><p class="lead">Сайт SimSim інформаційний: він не має форм, кошика чи онлайн-замовлення й не збирає персональні дані користувачів.</p><div class="note">Повний текст, відповідальну особу та актуальні умови обробки даних власник має заповнити перед публікацією.</div></div>`,
+nf:()=>`<div class="w page"><h1>Сторінку не знайдено</h1><p class="lead">Перевірте адресу або поверніться на головну.</p><a class="btn" href="#home">На головну</a></div>`};
+const T={home:'SimSim — домашня їдальня в Ковелі',menu:'Меню — SimSim',about:'Про заклад — SimSim',contacts:'Контакти — SimSim',privacy:'Політика конфіденційності — SimSim',nf:'Сторінку не знайдено — SimSim'};
+const NAV=[['home','Головна'],['menu','Меню'],['about','Про нас'],['contacts','Контакти']];
+const app=document.getElementById('app'),nav=document.getElementById('nav'),bg=document.getElementById('bg');
+document.getElementById('fa').textContent=C.addr;const fp=document.getElementById('fp');fp.href='tel:'+C.tel;fp.textContent=C.telT;document.getElementById('cp').href='tel:'+C.tel;
+function route(){const h=location.hash.slice(1)||'home';let k=h,cat='';
+if(h.startsWith('menu-')&&CATS.some(c=>'menu-'+c[0]===h)){k='menu';cat=h.slice(5)}else if(!V[h]||h==='nf')k='nf';
+app.innerHTML=V[k](cat);document.title=T[k];
+nav.innerHTML=NAV.map(a=>`<a href="#${a[0]}"${a[0]===k?' aria-current="page"':''}>${a[1]}</a>`).join('');
+nav.classList.remove('open');bg.setAttribute('aria-expanded','false');scrollTo(0,0);app.focus({preventScroll:true})}
+addEventListener('hashchange',route);route();
+bg.onclick=()=>bg.setAttribute('aria-expanded',nav.classList.toggle('open'));
+</script></body></html>
